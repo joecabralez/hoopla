@@ -14,11 +14,13 @@ var database = firebase.database();
 //database values
 var team = "";
 //store user input in database
-$("#search").on("click", function() {
+$("#search").on("click", function(event) {
+  event.preventDefault();
   team = $(".search-term:selected").val();
 
-  database.ref().set({
+  database.ref().push({
     team: team,
+    dateAdded: firebase.database.ServerValue.TIMESTAMP
   });
 
 });
@@ -98,10 +100,7 @@ function sportsData() {
     $("#home-team-name2").html(homeTeamName2);
     $("#home-team-score2").html(homeTeamScore2);
 
-
-
-    console.log("hello world");
-
+    $(".gamedate").text("Scores for games played on: " + gamedate);
 
 
   });
@@ -111,7 +110,7 @@ sportsData();
 
 setInterval(function() {
   sportsData()
-}, 45000);
+}, 60000);
 
 
 ////////////////////////////////////////////
