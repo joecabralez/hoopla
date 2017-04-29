@@ -47,19 +47,21 @@ function sportsData() {
       queryUrl = "https://www.mysportsfeeds.com/api/feed/pull/nba/2017-playoff/scoreboard.json?fordate=" + previousDate;
     }
 
-    var awayTeamCity1 = SportsData.scoreboard.gameScore[0].game.awayTeam.City
+    console.log(SportsData);
+
+    var awayTeamCity1 = SportsData.scoreboard.gameScore[0].game.awayTeam.Abbreviation
     var awayTeamName1 = SportsData.scoreboard.gameScore[0].game.awayTeam.Name
     var awayTeamScore1 = SportsData.scoreboard.gameScore[0].awayScore
 
-    var homeTeamCity1 = SportsData.scoreboard.gameScore[0].game.homeTeam.City
+    var homeTeamCity1 = SportsData.scoreboard.gameScore[0].game.homeTeam.Abbreviation
     var homeTeamName1 = SportsData.scoreboard.gameScore[0].game.homeTeam.Name
     var homeTeamScore1 = SportsData.scoreboard.gameScore[0].homeScore
 
-    var awayTeamCity2 = SportsData.scoreboard.gameScore[1].game.awayTeam.City
+    var awayTeamCity2 = SportsData.scoreboard.gameScore[1].game.awayTeam.Abbreviation
     var awayTeamName2 = SportsData.scoreboard.gameScore[1].game.awayTeam.Name
     var awayTeamScore2 = SportsData.scoreboard.gameScore[1].awayScore
 
-    var homeTeamCity2 = SportsData.scoreboard.gameScore[1].game.homeTeam.City
+    var homeTeamCity2 = SportsData.scoreboard.gameScore[1].game.homeTeam.Abbreviation
     var homeTeamName2 = SportsData.scoreboard.gameScore[1].game.homeTeam.Name
     var homeTeamScore2 = SportsData.scoreboard.gameScore[1].homeScore
 
