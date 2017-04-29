@@ -34,7 +34,7 @@ console.log(previousDate);
 //ajax to get sports api data/////
 //////////////////////////////////
 function sportsData() {
-  var queryUrl = "https://www.mysportsfeeds.com/api/feed/pull/nba/2017-playoff/scoreboard.json?fordate=" + todayDate;
+  var queryUrl = "https://www.mysportsfeeds.com/api/feed/pull/nba/2017-playoff/scoreboard.json?fordate=" + previousDate || todayDate;
   $.ajax({
     method: "GET",
     url: queryUrl,
@@ -43,9 +43,6 @@ function sportsData() {
       "Authorization": "Basic " + btoa("joecabralez" + ":" + "twattwat!3")
     },
   }).done(function(SportsData) {
-    if (!SportsData) {
-      queryUrl = "https://www.mysportsfeeds.com/api/feed/pull/nba/2017-playoff/scoreboard.json?fordate=" + previousDate;
-    }
 
     console.log(SportsData);
 
