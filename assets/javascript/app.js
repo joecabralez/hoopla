@@ -100,7 +100,6 @@ function sportsData() {
     $("#home-team-name2").html(homeTeamName2);
     $("#home-team-score2").html(homeTeamScore2);
 
-    $(".gamedate").text("Scores for games played on: " + gamedate);
 
 
   });
