@@ -142,6 +142,14 @@ function wikipediaBox(search) {
         $(this).replaceWith($(this).html());
       });
 
+      // remove cite error
+           blurb.find('.mw-ext-cite-error').remove();
+           $('#article').html($(blurb).find('p'));
+
+           //$('#wikipedia').html($(blurb).find('p'));
+           
+           // remove any references
+           blurb.find('sup').remove();
 
       $('#wikipedia').html($(blurb).find('p'));
 
