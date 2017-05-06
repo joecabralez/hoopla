@@ -55,14 +55,14 @@ function sportsData() {
     var homeTeamCity1 = SportsData.scoreboard.gameScore[0].game.homeTeam.Abbreviation
     var homeTeamName1 = SportsData.scoreboard.gameScore[0].game.homeTeam.Name
     var homeTeamScore1 = SportsData.scoreboard.gameScore[0].homeScore
-
+    /*
     var awayTeamCity2 = SportsData.scoreboard.gameScore[1].game.awayTeam.Abbreviation
     var awayTeamName2 = SportsData.scoreboard.gameScore[1].game.awayTeam.Name
     var awayTeamScore2 = SportsData.scoreboard.gameScore[1].awayScore
 
     var homeTeamCity2 = SportsData.scoreboard.gameScore[1].game.homeTeam.Abbreviation
     var homeTeamName2 = SportsData.scoreboard.gameScore[1].game.homeTeam.Name
-    var homeTeamScore2 = SportsData.scoreboard.gameScore[1].homeScore
+    var homeTeamScore2 = SportsData.scoreboard.gameScore[1].homeScore*/
 
     var gamedate = SportsData.scoreboard.gameScore[0].game.awayTeam.date
 
@@ -70,17 +70,17 @@ function sportsData() {
       homeTeamScore1 = 0;
     }
 
-    if (!homeTeamScore2) {
+    /*if (!homeTeamScore2) {
       homeTeamScore2 = 0;
-    }
+    }*/
 
     if (!awayTeamScore1) {
       awayTeamScore1 = 0;
     }
-
+    /*
     if (!awayTeamScore2) {
       awayTeamScore2 = 0;
-    }
+    }*/
 
 
 
@@ -91,14 +91,14 @@ function sportsData() {
     $("#home-team-city1").html(homeTeamCity1);
     $("#home-team-name1").html(homeTeamName1);
     $("#home-team-score1").html(homeTeamScore1);
-
+    /*
     $("#away-team-city2").html(awayTeamCity2);
     $("#away-team-name2").html(awayTeamName2);
     $("#away-team-score2").html(awayTeamScore2);
 
     $("#home-team-city2").html(homeTeamCity2);
     $("#home-team-name2").html(homeTeamName2);
-    $("#home-team-score2").html(homeTeamScore2);
+    $("#home-team-score2").html(homeTeamScore2);*/
 
 
 
