@@ -36,7 +36,7 @@ console.log(previousDate);
 //ajax to get sports api data/////
 //////////////////////////////////
 function sportsData() {
-  var queryUrl = "https://www.mysportsfeeds.com/api/feed/pull/nba/2017-playoff/scoreboard.json?fordate=" + todayDate;
+  var queryUrl = "https://www.mysportsfeeds.com/api/feed/pull/nba/2017-playoff/scoreboard.json?fordate=" + "20170612";
   $.ajax({
     method: "GET",
     url: queryUrl,
